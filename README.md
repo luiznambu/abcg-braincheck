@@ -1,5 +1,3 @@
-No repositório, inclua um arquivo README.md contendo:
-
     Nome e RA dos integrantes do grupo.
     Luiz Paulo Nambu 11069014
     Danilo Shinki Yoshizato 11108913
@@ -12,4 +10,5 @@ No repositório, inclua um arquivo README.md contendo:
     O jogo contém um tabuleiro de 4x4, totalizando 16 cartas, que são randomizadas a cada partida utilizando a <random> da biblioteca padrão do C++, e realizando uma função shuffle do começo ao fim do grid de cartas.
     Cada carta é revelada ao clicar com o mouse, ao clicar na segunda carta, uma função de comparação é chamada, aumentando a pontuaçao do jogador, caso acerte.
     Se o jogador errar o par, as cartas são escondidas novamente utilizando o espaço em branco ' '.
-    A cada jogada, é realizado o loop para verificar as condiçoes de fim de jogo. Caso o jogador complete 8 pontos, ele recebe uma mensagem de vitória, se ele realizar 20 jogadas e não alcansar 8 pontos, ele receberá uma mensagem de derrota. 
+    A cada jogada, é realizado o loop para verificar as condiçoes de fim de jogo. Caso o jogador complete 8 pontos, ele recebe uma mensagem de vitória, se ele realizar 20 jogadas e não alcansar 8 pontos, ele receberá uma mensagem de derrota.
+    Ao final do jogo, o botão de reiniciar pode ser utilizado para jogar novamente.
