@@ -1,9 +1,8 @@
 #include "window.hpp"
 #include <random>
-#include <thread>
 
 void Window::onCreate() {
-  // Load font with bigger size for the X's and O's
+  // Load font
   auto const filename{abcg::Application::getAssetsPath() +
                       "Inconsolata-Medium.ttf"};
   m_font = ImGui::GetIO().Fonts->AddFontFromFileTTF(filename.c_str(), 72.0f);
@@ -43,7 +42,7 @@ void Window::onPaintUI() {
       }
     }
 
-    // Static text showing current turn or win/draw messages
+    // Mensagens de vitória ou derrota
     {
       std::string text;
       switch (m_gameState) {
@@ -57,7 +56,7 @@ void Window::onPaintUI() {
         text = "Voce perdeu garotinho!";
         break;
       }
-      // Center text
+      // Centralizando o texto
       ImGui::SetCursorPosX(
           (appWindowWidth - ImGui::CalcTextSize(text.c_str()).x) / 2);
       ImGui::Text("%s", text.c_str());
