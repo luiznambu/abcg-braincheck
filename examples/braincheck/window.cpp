@@ -19,7 +19,7 @@ void Window::onPaintUI() {
   auto const appWindowWidth{gsl::narrow<float>(getWindowSettings().width)};
   auto const appWindowHeight{gsl::narrow<float>(getWindowSettings().height)};
 
-  // "Tic-Tac-Toe" window
+  // "braincheck" window
   {
     ImGui::SetNextWindowSize(ImVec2(appWindowWidth, appWindowHeight));
     ImGui::SetNextWindowPos(ImVec2(0, 0));
